@@ -128,7 +128,7 @@ We highlight the positive correlation between token volume and difficulty rankin
 **CoDiQ-Corpus** achieves higher difficulty ratings compared to standard competition benchmarks.
 
 <div align="center">
-  <img src="images/data_diff.png" width="80%" alt="CoDiQ Framework">
+  <img src="images/data_diff.png" width="60%" alt="CoDiQ Framework">
   <br>
   <em>Table 3. <strong>Datasets Difficulty Comparison. </strong>  The best, the second-best and the third-best
 scores for each indicator are shown in <span style="border:1px solid;padding:2px;">box</span> , <strong>bold</strong> and <u>underlined</u>,
