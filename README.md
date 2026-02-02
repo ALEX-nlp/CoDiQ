@@ -115,6 +115,7 @@ We highlight the positive correlation between token volume and difficulty rankin
 
 <div align="center">
   <img src="images/scaling.png" width="80%" alt="CoDiQ Framework">
+  <br>
   <em>Figure 2. <strong>Question Difficulty Scaling on CoDiQ-Bench.</strong> Scatter plot showing the relationship between average reasoning tokens and difficulty ranking (DR-AVG) for models using CoDiQ Prompt. Each point represents a model, demonstrating the positive correlation between increased reasoning computation and generated problem difficulty.
   </em>
 </div>
