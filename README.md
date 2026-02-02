@@ -8,10 +8,10 @@ CoDiQ: Test-Time Scaling for Controllable Difficult Question Generation
   <a href="">
     <img src="https://img.shields.io/badge/Paper-ArXiv-b31b1b.svg" alt="Paper">
   </a>
-  <a href="https://huggingface.co/m-a-p/CoDiQ-Gen-8B">
+  <a href="https://huggingface.co/AleXGroup/CoDiQ-Gen-8B">
     <img src="https://img.shields.io/badge/Model-Hugging%20Face-yellow" alt="CoDiQ Generator">
   </a>
-  <a href="https://huggingface.co/datasets/m-a-p/CoDiQ-Corpus">
+  <a href="https://huggingface.co/datasets/AleXGroup/CoDiQ-Corpus">
     <img src="https://img.shields.io/badge/Data-CoDiQ%20Corpus-blue" alt="CoDiQ Corpus">
   </a>
   <a href="">
@@ -20,7 +20,7 @@ CoDiQ: Test-Time Scaling for Controllable Difficult Question Generation
 </p>
 
 <p align="center">
-Repo for "<a href="https://arxiv.org/pdf/xxx" target="_blank">CoDiQ: Test-Time Scaling for Controllable Difficult Question Generation</a>"
+Repo for "<a href="" target="_blank">CoDiQ: Test-Time Scaling for Controllable Difficult Question Generation</a>"
 </p>
 
 ---
@@ -43,7 +43,7 @@ Key innovations include:
 2.  **CoDiQ-Generator**: A specialized model (finetuned from Qwen3-8B) that improves the upper bound of valid, high-difficulty question generation.
 3.  **CoDiQ-Corpus**: A dataset of **44K** competition-grade math and coding question sequences, which is significantly more challenging than LiveCodeBench and AIME.
 
-Training LRMs on CoDiQ-Corpus substantially enhances downstream reasoning performance. The [CoDiQ-Generator](https://huggingface.co/m-a-p/CoDiQ-Gen-8B) and [CoDiQ-Corpus](https://huggingface.co/datasets/m-a-p/CoDiQ-Corpus) are released.
+Training LRMs on CoDiQ-Corpus substantially enhances downstream reasoning performance. The [CoDiQ-Generator](https://huggingface.co/AleXGroup/CoDiQ-Gen-8B) and [CoDiQ-Corpus](https://huggingface.co/datasets/AleXGroup/CoDiQ-Corpus) are released.
 
 <div align="center">
   <img src="images/distribution.png" width="60%">
