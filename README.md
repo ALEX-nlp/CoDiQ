@@ -8,10 +8,10 @@ CoDiQ: Test-Time Scaling for Controllable Difficult Question Generation
   <a href="">
     <img src="https://img.shields.io/badge/Paper-ArXiv-b31b1b.svg" alt="Paper">
   </a>
-  <a href="">
+  <a href="https://huggingface.co/m-a-p/CoDiQ-Gen-8B">
     <img src="https://img.shields.io/badge/Model-Hugging%20Face-yellow" alt="CoDiQ Generator">
   </a>
-  <a href="">
+  <a href="https://huggingface.co/datasets/m-a-p/CoDiQ-Corpus">
     <img src="https://img.shields.io/badge/Data-CoDiQ%20Corpus-blue" alt="CoDiQ Corpus">
   </a>
   <a href="">
@@ -20,7 +20,7 @@ CoDiQ: Test-Time Scaling for Controllable Difficult Question Generation
 </p>
 
 <p align="center">
-Repo for "<a href="https://arxiv.org/pdf/2507.06181" target="_blank">CoDiQ: Test-Time Scaling for Controllable Difficult Question Generation</a>"
+Repo for "<a href="https://arxiv.org/pdf/xxx" target="_blank">CoDiQ: Test-Time Scaling for Controllable Difficult Question Generation</a>"
 </p>
 
 ---
@@ -43,7 +43,7 @@ Key innovations include:
 2.  **CoDiQ-Generator**: A specialized model (finetuned from Qwen3-8B) that improves the upper bound of valid, high-difficulty question generation.
 3.  **CoDiQ-Corpus**: A dataset of **44K** competition-grade math and coding question sequences, which is significantly more challenging than LiveCodeBench and AIME.
 
-Training LRMs on CoDiQ-Corpus substantially enhances downstream reasoning performance. The [CoDiQ-Generator]() and [CoDiQ-Corpus]() are released.
+Training LRMs on CoDiQ-Corpus substantially enhances downstream reasoning performance. The [CoDiQ-Generator](https://huggingface.co/m-a-p/CoDiQ-Gen-8B) and [CoDiQ-Corpus](https://huggingface.co/datasets/m-a-p/CoDiQ-Corpus) are released.
 
 <div align="center">
   <img src="images/distribution.png" width="60%">
@@ -58,7 +58,7 @@ Training LRMs on CoDiQ-Corpus substantially enhances downstream reasoning perfor
 The CoDiQ pipeline iteratively evolves a seed question $Q_0$ into harder variants $\{Q_1, ..., Q_n\}$ through a rigorous cycle of generation and verification.
 
 <div align="center">
-  <img src="images/framework.png" width="100%" alt="CoDiQ Framework">
+  <img src="images/framework.png" width="60%" alt="CoDiQ Framework">
 </div>
 
 ### 1. Difficulty-Enhancement Strategies
@@ -114,7 +114,7 @@ respectively.
 We highlight the positive correlation between token volume and difficulty rankings shown in the following Figure.
 
 <div align="center">
-  <img src="images/scaling.png" width="100%" alt="CoDiQ Framework">
+  <img src="images/scaling.png" width="80%" alt="CoDiQ Framework">
   <em>Figure 2. <strong>Question Difficulty Scaling on CoDiQ-Bench.</strong> Scatter plot showing the relationship between average reasoning tokens and difficulty ranking (DR-AVG) for models using CoDiQ Prompt. Each point represents a model, demonstrating the positive correlation between increased reasoning computation and generated problem difficulty.
   </em>
 </div>
@@ -127,7 +127,8 @@ We highlight the positive correlation between token volume and difficulty rankin
 **CoDiQ-Corpus** achieves higher difficulty ratings compared to standard competition benchmarks.
 
 <div align="center">
-  <img src="images/data_diff.png" width="100%" alt="CoDiQ Framework">
+  <img src="images/data_diff.png" width="80%" alt="CoDiQ Framework">
+  <br>
   <em>Table 3. <strong>Datasets Difficulty Comparison. </strong>  The best, the second-best and the third-best
 scores for each indicator are shown in <span style="border:1px solid;padding:2px;">box</span> , <strong>bold</strong> and <u>underlined</u>,
 respectively.
@@ -157,7 +158,7 @@ pip install -r requirements.txt
 
 ### Inference: Generating Difficult Questions
 
-You can leverage `CoDiQ-Gen-8B` to enhance the complexity of any seed problem. To begin, update the configuration in `model_api.py` and execute the following script:
+You can leverage `CoDiQ-Gen-8B` to enhance the complexity of any seed problem. To begin, update the configuration in `tools_api.py`, `codiq_api.py`, `count_tokens.py` and then execute the following script:
 ```bash
 bash run.sh
 ```
