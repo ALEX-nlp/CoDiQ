@@ -5,7 +5,7 @@ CoDiQ: Test-Time Scaling for Controllable Difficult Question Generation
 </h1>
 
 <p align="center">
-  <a href="">
+  <a href="https://arxiv.org/pdf/2602.01660">
     <img src="https://img.shields.io/badge/Paper-ArXiv-b31b1b.svg" alt="Paper">
   </a>
   <a href="https://huggingface.co/AleXGroup/CoDiQ-Gen-8B">
@@ -20,7 +20,7 @@ CoDiQ: Test-Time Scaling for Controllable Difficult Question Generation
 </p>
 
 <p align="center">
-Repo for "<a href="" target="_blank">CoDiQ: Test-Time Scaling for Controllable Difficult Question Generation</a>"
+Repo for "<a href="https://arxiv.org/pdf/2602.01660" target="_blank">CoDiQ: Test-Time Scaling for Controllable Difficult Question Generation</a>"
 </p>
 
 ---
@@ -173,8 +173,8 @@ If you find **CoDiQ** useful for your research, please consider citing our paper
 ```bibtex
 @article{codiq2026,
   title={CoDiQ: Test-Time Scaling for Controllable Difficult Question Generation},
-  author={zhongyuan Peng, Caijun Xu, Changyi Xiao, Shibo Hong, Ge Zhang, Wenhao Huang, Yixin Cao},
-  journal={arXiv preprint},
+  author={Zhongyuan Peng, Caijun Xu, Changyi Xiao, Shibo Hong, Eli Zhang, Stephen Huang, Yixin Cao},
+  journal={arXiv preprint arXiv:2602.01660},
   year={2026}
 }
 ```
