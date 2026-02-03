@@ -1,5 +1,5 @@
 <h1 align="center">
-<img src="images/logo.png" width="80" alt="CriticBench" />
+<img src="images/logo.png" width="80"/>
 <br>
 CoDiQ: Test-Time Scaling for Controllable Difficult Question Generation
 </h1>
